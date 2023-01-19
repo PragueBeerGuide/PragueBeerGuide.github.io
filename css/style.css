@@ -1,0 +1,222 @@
+html {
+    box-sizing: border-box;
+    font-family: "Sofia Sans Condensed";
+    line-height: 1.3;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav {
+    position:fixed;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    background-color: #232323;
+    width: 100%;
+}
+
+/* .logo {
+    background-color: white;
+    height: 100%;
+
+} */
+
+.nav-list {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 1 0 20vw;
+    padding: 10px 0;
+}
+.nav-item:hover {
+    background-color: #54be90;
+}
+
+li a {
+    text-decoration: none; /* Remove the link underlining */
+    color: white;
+    font-size: 1.5rem;
+}
+li a:hover {
+    color: #444444;
+}
+
+
+/* Main Image section */
+h1 {
+    font-size: 5rem;
+}
+
+.main-image h1, 
+.main-image h2 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.main-image {
+    height: 600px;
+    margin-top: 150px;
+    background: #b210c1 url("../img/cover_photo_coding.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-image__headings {
+    position: relative;
+    top: 30%;
+}
+/* Suntitle section */
+.subtitle {
+    font-size: 2rem;
+    padding: 20px 200px;
+}
+
+/* Work Stages section */
+.work-stages {
+    background-color: #232323;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 5%;
+}
+
+.work-stages__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.work-stages__column_heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #54be90;
+    margin: 20px;
+}
+
+.work-stages__column_p {
+    padding: 0 50px;
+    font-size: 1.5rem;
+    margin-bottom: 15%;
+}
+
+/* My Skills section */
+.skills h2 {
+    font-size: 4rem;
+    padding-top: 70px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.chart__row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.chart__row_skill-name {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: #444444;
+    color: white;
+    font-size: 1.7rem;
+    padding: 10px
+
+}
+
+.chart__row_bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-level {
+    background-color: #54be90;
+}
+
+.skill-percent {
+    display: flex;
+    flex-grow: 1;
+    justify-content: right;
+    background-color: #ebebeb;
+    color: #444444;
+    height: 100%;
+    font-size: 1.5rem;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.s80 {
+    width: 80%;
+}
+.s70 {
+    width: 70%;
+}
+.s60 {
+    width: 60%;
+}
+.s50 {
+    width: 50%;
+}
+
+/* Simple styling classes */
+.upper {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: #54be90;
+}
+
+.light-grey {
+    color: #ebebeb;
+}
+
+.dark-grey {
+    color: #232323;
+} 
+
+.text-grey {
+    color: #444444;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
